@@ -22,7 +22,7 @@ if (session_status() == PHP_SESSION_NONE) {
             <?php if (isset($_SESSION['user'])): ?>
                 <strong>Xin chào <?php echo htmlspecialchars($_SESSION['user']['hoten']); ?>!</strong><br>
                 <?php if ($_SESSION['user']['role'] == 'admin'): ?>
-                    <a href="../admin/index.php" style="color:#ffeb3b; font-weight:bold;">Quản trị</a> | 
+                    <a href="admin/index.php" style="color:#ffeb3b; font-weight:bold;">Quản trị</a> | 
                 <?php endif; ?>
                 <a href="login_logout/taikhoan.php" style="color:#a8e6cf;">Tài khoản</a> | 
                 <a href="login_logout/dangxuat.php" style="color:#ff9999;">Đăng xuất</a>
